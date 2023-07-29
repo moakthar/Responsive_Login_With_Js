@@ -1,0 +1,158 @@
+body {
+    background: linear-gradient(to right,grey,goldenrod);
+}
+
+.group {
+   list-style: none;
+   position: relative;
+   margin-left: 110px;
+   }
+.group a:hover {
+    transform: rotateY(360deg);
+    transition: ease-in-out 1s;
+}
+
+.group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(to right,gray);
+    color: black;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    float:left;
+    text-align: center;
+    margin-left: -10px;
+    cursor: pointer;
+    border: 2px solid goldenrod;
+    border-radius: 55px;
+    transition: .5s ease;
+}
+
+.activa {
+    float: left;
+    padding: 15px;
+    margin-left: 140px;
+}
+.one {
+    height: 450px;
+    width: 35%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 8% 0 0 33%;
+    background: linear-gradient(to left,darkgray,white,darkgray);
+    transition: .5s ease;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 11% 0 0 6%;
+    position: absolute;
+    transition: .5s ease;
+    background-size: contain;
+}
+
+input[type="text"],[type="password"],[type="email"] {
+    border-radius: 30px;
+    height: 15%;
+    cursor: pointer;
+}
+
+#kaf {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#kas {
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#name {
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(218, 165, 32, 0.514);
+}
+
+#pass {
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(218, 165, 32, 0.541);
+}
+
+.btn {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    border-radius: 50px;
+    height: 48px;
+    width: 150px;
+    outline: none;
+    background: linear-gradient(to left, rgba(218, 165, 32, 0.192),goldenrod);
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: skew(180deg);
+    transition: ease-in-out 10s;
+}
+
+.fp {
+    text-decoration: none;
+    color: black;
+}
+
+.btn1 {
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 90px 30px 0px;
+    outline-offset: 30px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.btn1:checked {
+    background-color:  goldenrod;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    color: #000;
+    position: absolute;
+    margin: -300px 0 0 -450px;
+    background-color:  rgba(15, 233, 15, 0.209);
+    border-radius: 30px;
+  }
+  
+  #message p {
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
